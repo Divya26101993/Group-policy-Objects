@@ -120,4 +120,177 @@ When you double-click the Password must meet complexity requirements policy, the
 
 ![Image](https://github.com/user-attachments/assets/d994f0e7-55cc-4e0f-aba7-178a20ef7d2d)
 
+On the same screen where you click 'Explain,' the minimum password requirements are also displayed
+
+![Image](https://github.com/user-attachments/assets/624e9bd8-35f4-4de7-970f-399f7b43ff79)
+
+We're updating the password age policy, meaning you will be required to change your password after a set period (e.g., every 90 days)
+
+![Image](https://github.com/user-attachments/assets/6db63113-f8b0-4507-bbf2-23232258fae6)
+
+![Image](https://github.com/user-attachments/assets/1423d1f7-9128-4dc3-b11b-0bbdb342a934)
+
+When you update the password expiration period to 90 days, the screen below will appear, showing the default or suggested setting (30 days). Once updated, click 'OK' to confirm the change to 90 days
+
+![Image](https://github.com/user-attachments/assets/1554569c-0144-4478-8a2f-02037809b675)
+
+There are several other options available for customization. I've modified a few additional settings based on the company's policy, and these adjustments have been implemented accordingly.
+
+![Image](https://github.com/user-attachments/assets/f1cebcc0-d9e7-42e9-9b38-6678d7189e51)
+
+Once all changes are made, if you need to make any further adjustments, right-click on the policy (Password Policy) and select 'Edit.' You can modify the settings whenever necessary
+
+![Image](https://github.com/user-attachments/assets/a92f056e-ace3-4cc6-8e9b-6504e45c8bfe)
+
+![Image](https://github.com/user-attachments/assets/22a1f973-7728-4cbc-8509-f3731f2d6887)
+
+### Step 3:  Creating Drive Mapping Policy
+
+As mentioned earlier, right-click on IT.local and select Create GPO. Name it Drive Mapping
+
+![Image](https://github.com/user-attachments/assets/6f9f86de-e07e-417f-b747-0ac10a14695a)
+
+Now, the newly created Drive Mapping GPO will appear under IT.local
+
+![Image](https://github.com/user-attachments/assets/42d42a4b-176c-45b5-a5c2-babcbf4b496a)
+
+Next, right-click on Drive Mapping and select Edit. The screen below will open
+
+![Image](https://github.com/user-attachments/assets/5edd7e8e-ede9-4cf5-bcd9-f8243dd66a55)
+
+This GPO falls under User Configuration because it applies to the user, who is the one utilizing this policy. Select Preferences since the user can modify or change the drive whenever necessary
+
+Navigation path: User configuration -> Preferences -> Windows settings -> Drive Maps -> Right click -> New -> Mapped drive
+
+![Image](https://github.com/user-attachments/assets/7aae73b7-2ec8-4858-938a-d2f3c7051211)
+
+![Image](https://github.com/user-attachments/assets/dfd5499e-95aa-4a16-af6b-d665afc37459)
+
+In the screen below, you can specify the path of the network share and select the drive letter as shown in the images below and click Apply and Ok
+
+![Image](https://github.com/user-attachments/assets/9f2b8e6b-a65e-4c93-ad1f-99edcd22d34f)
+
+![Image](https://github.com/user-attachments/assets/21f325b1-30e9-4371-8382-24319b2ab496)
+
+Now, you will be able to see the folder and the path of the drive listed under Drive Maps
+
+### Step 4: Creating Desktop Wallpaper policy
+
+In this GPO, we’ve set up a default wallpaper for all users.
+
+The process of creating a new GPO is the same for all policies
+
+In the screen below, you can see that I've already created a GPO called Desktop Wallpaper Policy under IT.local
+
+![Image](https://github.com/user-attachments/assets/db898209-cd3a-40c1-a273-49f7b190e10a)
+
+This policy is applied to users, so we need to select User Configuration
+
+Navigation Path: User configuration -> Administrative templates:Policy definitions -> Desktop
+
+![Image](https://github.com/user-attachments/assets/d15623fa-5574-4851-afc9-0b758d203eea)
+
+When you click on Desktop, you'll see many options related to desktop changes. From the list, select Desktop Wallpaper
+
+![Image](https://github.com/user-attachments/assets/9de9c930-89c6-4ff2-805f-230e38f4d0c9)
+
+Now, the screen below will open. In this, we enable the policy, then under Wallpaper Name, select the path to the wallpaper. For Wallpaper Type, we typically choose Fill or Center
+
+![Image](https://github.com/user-attachments/assets/e6312af9-de02-4ec7-9e85-9aece92cfa27)
+
+![Image](https://github.com/user-attachments/assets/be85755a-3ba6-41a5-80e2-c3c468dd7c63)
+
+### Step 5: Creating Policy to  Restrict Access to control Panel
+
+In this policy, we are preventing users from accessing the Control Panel
+
+Follow the same steps to create and edit the policy
+
+In the GPM editor, we select User Configuration because this policy is applied to users
+
+Navigation Path: User Configuration -> Policies -> Administrative templates -> control panel
+
+![Image](https://github.com/user-attachments/assets/530df254-6297-4d7d-92da-f351ef07ee3e)
+
+Similar to other GPOs, this one also offers many options. We choose Prohibit access to Control Panel and PC settings
+
+![Image](https://github.com/user-attachments/assets/8479de87-6454-4026-bd1f-4d4186d1975e)
+
+When you click on it, the screen below will open. Select Enable, then click Apply and OK
+
+![Image](https://github.com/user-attachments/assets/f77e195a-23ee-4ce5-9193-d74bdf8e286d)
+
+![Image](https://github.com/user-attachments/assets/21c02bff-550c-4e5b-92b4-c5fd10dfead7)
+
+![Image](https://github.com/user-attachments/assets/d033537b-dad3-4d71-a5fd-7f997566b813)
+
+### Step 6: Creating policy to Disable USB storage
+
+In this policy, we are preventing users from using USB storage devices
+
+Create a new GPO called Disable USB Storage, right-click on it, and select Edit
+
+![Image](https://github.com/user-attachments/assets/cbceee61-cff8-458d-bad8-f0eced279ec0)
+
+![Image](https://github.com/user-attachments/assets/8f4875ad-2a62-46ae-a48b-c0fd5cc04605)
+
+In the GPM Editor, we use this policy under Computer Configuration because it applies directly to the computer. This will prohibit any user from using a USB storage device on the computer
+
+Navigation path: Computer Configuration -> Policies -> Administrative templates -> System -> Removable storage devices
+
+![Image](https://github.com/user-attachments/assets/7c35233d-9fad-45a7-af50-4f9111de4a9e)
+
+On the right-hand side, select **All Removable Storage Classes: Deny all access**
+
+![Image](https://github.com/user-attachments/assets/ec33a005-a7ed-4fb0-b842-1c6571d34c32)
+
+In the next screen, select Enabled, then click Apply and OK
+
+![Image](https://github.com/user-attachments/assets/3fcd9294-f69f-496c-86ce-ab240bd8673a)
+
+![Image](https://github.com/user-attachments/assets/e74b2ef2-f5fa-4555-82c0-689b5bc6d16f)
+
+![Image](https://github.com/user-attachments/assets/f201f55e-89f2-48cf-ab5c-f879348d3a76)
+
+### Step 7:  Creating Account lockout Policy
+
+This policy is set to prevent brute force attacks
+
+First, create a new GPO called Account Lockout Policy, right-click on it, and select Edit
+
+![Image](https://github.com/user-attachments/assets/5db7c1f2-8205-449f-a3bb-d485bba7294b)
+
+![Image](https://github.com/user-attachments/assets/b74b8547-87ec-4971-802e-c4362e163865)
+
+This policy is directly implemented under Computer Configuration
+
+Navigation Path: Computer Configuration -> Policies -> Windows settings -> Security settings -> Account policies
+
+![Image](https://github.com/user-attachments/assets/4ef6977e-c524-4d23-80b7-a0278d3f12a4)
+
+On the right-hand side, select Account Lockout Policy
+
+![Image](https://github.com/user-attachments/assets/a9570262-6bf1-4560-b617-a5c5fce92b04)
+
+In the next screen, you can select Account Lockout Duration
+
+![Image](https://github.com/user-attachments/assets/1b53e046-7bcd-454e-8e03-7e868cb10b10)
+
+The next screen will prompt you to specify how long the system should remain locked out after a certain number of failed attempts
+
+Tick Define this policy setting, then enter the number of minutes for the lockout duration. Click Apply, and it will show Account Lockout Threshold, which determines the number of failed attempts before the account is locked,. Then Click Ok
+
+![Image](https://github.com/user-attachments/assets/cf55f0b2-bb6f-483f-9b6f-48de91a150d1)
+
+![Image](https://github.com/user-attachments/assets/9625a7cc-19e7-47f6-8214-e37defa0b98e)
+
+![Image](https://github.com/user-attachments/assets/1e889d15-6a07-499b-a2ac-cc35d8e72510)
+
+The final screen will show the number of policies you have created under IT.local
+
+![Image](https://github.com/user-attachments/assets/7a417933-d8d6-4539-bcd9-6081b2738d84)
+
+
+
+
 
