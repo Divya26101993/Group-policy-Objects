@@ -302,7 +302,25 @@ The final screen will display the list of all policies created under **IT.local*
 
 ## Conclusion
 
-Congratulations! You’ve successfully created and configured several Group Policy Objects. Regularly monitor and update GPOs as needed to ensure a secure and efficient environment. For advanced configurations or troubleshooting, refer to Microsoft's official documentation on Group Policy Management.
+Congratulations! You’ve successfully created and configured several Group Policy Objects. Regularly monitor and update GPOs as needed to ensure a secure and efficient environment. For advanced configurations or troubleshooting, refer to Microsoft's official documentation on Group Policy Management
+
+## Resources
+
+Window server 2022 ISO File (https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
+VMware file -(https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion )
+[Check out this tutorial on YouTube](https://www.youtube.com/watch?v=6F7-tV4lYFw&list=PLAdEnQWAAbfXMY2D4HVZOe-ChfTKmaJfQ&index=2)
+[Check out this tutorial on YouTube](https://www.youtube.com/watch?v=rEhTzP-ScBo)
+
+## Author
+
+Github: [Divya26101993](https://github.com/Divya26101993)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE)
+
+
+.
 
 
 
